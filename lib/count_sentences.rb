@@ -3,20 +3,20 @@ require 'pry'
 class String
 
   def sentence?
-    "HI!".end_with?("!")
+    self.end_with?(".")
     
   end
   
   def question?
-    if self.string =
-
+    self.end_with?("?")
   end
 
   def exclamation?
-
+    self.end_with?("!")
   end
 
   def count_sentences
-
+    self.split("?").count + self.split(".").count + self.split("!").count
+  end
   end
 end
